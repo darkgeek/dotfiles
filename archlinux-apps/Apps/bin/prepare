@@ -1,0 +1,6 @@
+#!/bin/sh
+echo mount storage sda2
+sudo mount -o noatime /dev/sda2 /mnt/archlinux 
+
+echo enable swapfile
+sudo swapon /mnt/archlinux/swapfile

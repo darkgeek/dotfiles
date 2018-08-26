@@ -1,0 +1,18 @@
+#!/bin/env bash
+#
+# Upgrade packages both in official repo and AUR
+
+CURRENT_DIR=`dirname "$0"`
+
+. $CURRENT_DIR/libaur.sh
+
+echo === Updating official supported packages ===
+sudo pacman -Syu --color=auto
+
+echo === Updating AUR packages ===
+test_if_cower_is_available || install_cower
+cower -u --color=auto --timeout 120 
+
+if [ $? -ne 0 ];then
+    echo 'Update(s) available, use "aurin [package_name]" to install.'
+fi
