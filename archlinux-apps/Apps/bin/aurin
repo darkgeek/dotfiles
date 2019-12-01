@@ -7,7 +7,7 @@ SCRIPT_NAME=`basename "$0"`
 
 . $CURRENT_DIR/libaur.sh
 
-test_if_cower_is_available || install_cower
+test_if_yaah_is_available || install_yaah
 
 function print_help {
     echo "Usage: $CURRENT_DIR/$SCRIPT_NAME [package_name]"
@@ -21,7 +21,7 @@ fi
 
 echo === Downloading AUR files ===
 cd $WORKING_DIR
-cower -ddf --color=auto $PKG_NAME 
+yaah $PKG_NAME 
 
 if [ $? -eq 0 ];then
     echo === Building ===

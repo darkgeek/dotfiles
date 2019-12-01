@@ -10,8 +10,8 @@ echo === Updating official supported packages ===
 sudo pacman -Syu --color=auto
 
 echo === Updating AUR packages ===
-test_if_cower_is_available || install_cower
-cower -u --color=auto --timeout 120 
+test_if_yaah_is_available || install_yaah
+yaah -c -v
 
 if [ $? -ne 0 ];then
     echo 'Update(s) available, use "aurin [package_name]" to install.'
