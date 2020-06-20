@@ -1,0 +1,34 @@
+[Normal]
+dummy=prevent-empty-group
+
+[dracula]
+Color Background=40,42,54
+Color Code Folding=139,233,253
+Color Current Line Number=248,248,242
+Color Highlighted Bracket=85,0,127
+Color Highlighted Line=40,42,54
+Color Icon Bar=40,42,54
+Color Indentation Line=98,114,164
+Color Line Number=144,145,148
+Color MarkType 1=139,233,253
+Color MarkType 2=255,85,85
+Color MarkType 3=241,250,140
+Color MarkType 4=189,147,249
+Color MarkType 5=68,71,90
+Color MarkType 6=255,184,108
+Color MarkType 7=255,85,85
+Color Modified Lines=255,121,198
+Color Replace Highlight=80,250,123
+Color Saved Lines=80,250,123
+Color Search Highlight=179,152,0
+Color Selection=68,71,90
+Color Separator=144,145,148
+Color Spelling Mistake Line=255,85,85
+Color Tab Marker=98,114,164
+Color Template Background=40,42,54
+Color Template Editable Placeholder=40,42,54
+Color Template Focused Editable Placeholder=40,42,54
+Color Template Not Editable Placeholder=68,71,90
+Color Word Wrap Marker=40,42,54
+Font=Sans Serif,9,-1,5,50,0,0,0,0,0
+dummy=prevent-empty-group

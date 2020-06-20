@@ -1,0 +1,275 @@
+[file:///home/justin/Downloads/fsnotifer/fsnotifier.h]
+Bookmarks=
+Checksum=2c44a86eb3b0fa040b9891d3fec75d7281a531ad
+Encoding=UTF-8
+Highlighting=C++
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=C++
+Mode Set By User=false
+Time=2020,6,20,16,12,15
+URL=file:///home/justin/Downloads/fsnotifer/fsnotifier.h
+
+[file:///home/justin/Downloads/fsnotifer/inotify.c]
+Bookmarks=
+Checksum=e2acf16f677626f03198a5299eb319fd4509bd51
+Encoding=UTF-8
+Highlighting=C
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=C
+Mode Set By User=false
+Time=2020,6,20,17,35,9
+URL=file:///home/justin/Downloads/fsnotifer/inotify.c
+
+[file:///home/justin/Downloads/fsnotifer/main.c]
+Bookmarks=
+Checksum=f3d204693563ade7b72b4b80a036efd96f93b1e2
+Encoding=UTF-8
+Highlighting=C
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=C
+Mode Set By User=false
+Time=2020,6,20,16,36,0
+URL=file:///home/justin/Downloads/fsnotifer/main.c
+
+[file:///home/justin/Downloads/fsnotifer/util.c]
+Bookmarks=
+Checksum=0f07080f1dc7e2e78a97c6024029a74837bdd998
+Encoding=UTF-8
+Highlighting=C
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=C
+Mode Set By User=false
+Time=2020,6,20,16,12,15
+URL=file:///home/justin/Downloads/fsnotifer/util.c
+
+[file:///home/justin/Downloads/otter-browser/src/core/Application.h]
+Bookmarks=
+Checksum=04ba42c995430cedbe215c560e2f0995489828a0
+Encoding=UTF-8
+Highlighting=C++
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=C++
+Mode Set By User=false
+Time=2020,6,20,10,34,38
+URL=file:///home/justin/Downloads/otter-browser/src/core/Application.h
+
+[file:///home/justin/Downloads/otter-browser/src/main.cpp]
+Bookmarks=
+Checksum=888e6cfa4a783c127f5a2368b7a3b724e83f260d
+Encoding=UTF-8
+Highlighting=C++
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=C++
+Mode Set By User=false
+Time=2020,6,20,10,34,39
+URL=file:///home/justin/Downloads/otter-browser/src/main.cpp
+
+[file:///home/justin/Shares/bowser/docs/Parser.html]
+Bookmarks=
+Checksum=2ebd36b1fa0578f62d637559f002683cc3c20fe6
+Encoding=UTF-8
+Highlighting=HTML
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=HTML
+Mode Set By User=false
+Time=2020,6,20,17,32,0
+URL=file:///home/justin/Shares/bowser/docs/Parser.html
+
+[file:///home/justin/Shares/bowser/package.json]
+Bookmarks=
+Checksum=4b7900d93dd3f6111fd82936def2d0998feb4c67
+Encoding=UTF-8
+Highlighting=JSON
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=JSON
+Mode Set By User=false
+Time=2020,6,20,16,39,30
+URL=file:///home/justin/Shares/bowser/package.json
+
+[file:///home/justin/Shares/bowser/src/bowser.js]
+Bookmarks=
+Checksum=f79e6e0e87ee5d537bb199d24d6d79f24ec9071f
+Encoding=UTF-8
+Highlighting=JavaScript
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=JavaScript
+Mode Set By User=false
+Time=2020,6,20,17,35,9
+URL=file:///home/justin/Shares/bowser/src/bowser.js
+
+[file:///home/justin/Shares/bowser/src/constants.js]
+Bookmarks=
+Checksum=f335032520e5bf18c1969665e9ac0e5c3276b4fd
+Encoding=UTF-8
+Highlighting=JavaScript
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=JavaScript
+Mode Set By User=false
+Time=2020,6,20,17,31,59
+URL=file:///home/justin/Shares/bowser/src/constants.js
+
+[file:///home/justin/Shares/bowser/src/parser-browsers.js]
+Bookmarks=
+Checksum=b5e516431be291c9e036c9ee1c57b146273c7e48
+Encoding=UTF-8
+Highlighting=JavaScript
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=JavaScript
+Mode Set By User=false
+Time=2020,6,20,17,31,59
+URL=file:///home/justin/Shares/bowser/src/parser-browsers.js
+
+[file:///home/justin/Shares/bowser/src/parser-os.js]
+Bookmarks=
+Checksum=4c516dd6f46124fecf581e108b3b914084abfa17
+Encoding=UTF-8
+Highlighting=JavaScript
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=JavaScript
+Mode Set By User=false
+Time=2020,6,20,17,20,0
+URL=file:///home/justin/Shares/bowser/src/parser-os.js
+
+[file:///home/justin/Shares/bowser/src/parser-platforms.js]
+Bookmarks=
+Checksum=48b1eb10aec63c9a01eb92c3af0ed4b6626b8de0
+Encoding=UTF-8
+Highlighting=JavaScript
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=JavaScript
+Mode Set By User=false
+Time=2020,6,20,16,56,29
+URL=file:///home/justin/Shares/bowser/src/parser-platforms.js
+
+[file:///home/justin/Shares/bowser/src/parser.js]
+Bookmarks=
+Checksum=2fcfcab72aa0a08ae9a25b9e684e5bd5e82981a9
+Encoding=UTF-8
+Highlighting=JavaScript
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=JavaScript
+Mode Set By User=false
+Time=2020,6,20,17,31,59
+URL=file:///home/justin/Shares/bowser/src/parser.js
+
+[file:///home/justin/Shares/bowser/src/utils.js]
+Bookmarks=
+Checksum=d1174bf0a11df0faab975626b7b9e26910b4b5ad
+Encoding=UTF-8
+Highlighting=JavaScript
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=JavaScript
+Mode Set By User=false
+Time=2020,6,20,17,31,57
+URL=file:///home/justin/Shares/bowser/src/utils.js
+
+[file:///home/justin/Shares/palemoon/Pale-Moon-28.10.0_Release/README.md]
+Bookmarks=
+Checksum=cc755b1f14bea212212641124f983b4370072c39
+Encoding=UTF-8
+Highlighting=Markdown
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Markdown
+Mode Set By User=false
+Time=2020,6,20,10,20,7
+URL=file:///home/justin/Shares/palemoon/Pale-Moon-28.10.0_Release/README.md
+
+[file:///home/justin/Shares/palemoon/Pale-Moon-28.10.0_Release/palemoon/app/macversion.py]
+Bookmarks=
+Checksum=839aac1ffc3e456d7bce684e7b9995ab9db85527
+Encoding=UTF-8
+Highlighting=Python
+Highlighting Set By User=false
+Indentation Mode=python
+Mode=Python
+Mode Set By User=false
+Time=2020,6,20,4,45,52
+URL=file:///home/justin/Shares/palemoon/Pale-Moon-28.10.0_Release/palemoon/app/macversion.py
+
+[file:///home/justin/Shares/palemoon/Pale-Moon-28.10.0_Release/palemoon/app/nsBrowserApp.cpp]
+Bookmarks=
+Checksum=8b061352823f87facd5744f49d8616a7182e1d78
+Encoding=UTF-8
+Highlighting=C++
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=C++
+Mode Set By User=false
+Time=2020,6,20,10,22,23
+URL=file:///home/justin/Shares/palemoon/Pale-Moon-28.10.0_Release/palemoon/app/nsBrowserApp.cpp
+
+[file:///home/justin/Shares/palemoon/Pale-Moon-28.10.0_Release/palemoon/components/feeds/nsFeedSniffer.cpp]
+Bookmarks=
+Checksum=f314d3d3bd40c16de14a3c2166d0077e5be26a66
+Encoding=UTF-8
+Highlighting=C++
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=C++
+Mode Set By User=false
+Time=2020,6,20,10,27,2
+URL=file:///home/justin/Shares/palemoon/Pale-Moon-28.10.0_Release/palemoon/components/feeds/nsFeedSniffer.cpp
+
+[file:///home/justin/Shares/palemoon/Pale-Moon-28.10.0_Release/palemoon/components/feeds/nsFeedSniffer.h]
+Bookmarks=
+Checksum=a0eb9862ceea8a4939fe91cd72dd73a03ee69ac4
+Encoding=UTF-8
+Highlighting=C++
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=C++
+Mode Set By User=false
+Time=2020,6,20,10,27,6
+URL=file:///home/justin/Shares/palemoon/Pale-Moon-28.10.0_Release/palemoon/components/feeds/nsFeedSniffer.h
+
+[file:///home/justin/Shares/palemoon/Pale-Moon-28.10.0_Release/palemoon/confvars.sh]
+Bookmarks=
+Checksum=f2ca9466276eed4c58d04a415cf48b6a94ddc44e
+Encoding=UTF-8
+Highlighting=Bash
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Bash
+Mode Set By User=false
+Time=2020,6,20,4,44,8
+URL=file:///home/justin/Shares/palemoon/Pale-Moon-28.10.0_Release/palemoon/confvars.sh
+
+[file:///usr/include/stdio.h]
+Bookmarks=
+Checksum=b63ee88a776aa12586f086ab49d05baadd12aeed
+Encoding=UTF-8
+Highlighting=C++
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=C++
+Mode Set By User=false
+Time=2020,6,20,16,5,26
+URL=file:///usr/include/stdio.h
+
+[file:///usr/include/string.h]
+Bookmarks=
+Checksum=608ed496b99272f7668165ef6379fa7e242a5bc8
+Encoding=UTF-8
+Highlighting=C++
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=C++
+Mode Set By User=false
+Time=2020,6,20,16,12,15
+URL=file:///usr/include/string.h
