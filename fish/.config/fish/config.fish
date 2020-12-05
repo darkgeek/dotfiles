@@ -18,5 +18,8 @@ load-ssh-agent
 # OpenBSD only
 echo (load-openbsd-only-config) | source
 
+# Termux only
+load-termux-only-config
+
 # Eyecandy
 fortune | cowsay
