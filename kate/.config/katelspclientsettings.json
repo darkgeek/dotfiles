@@ -1,0 +1,12 @@
+{
+    "servers": {
+        "javascript": {
+        	   "command": ["/home/justin/Apps/javascript-typescript-langserver/node_modules/javascript-typescript-langserver/lib/language-server-stdio.js"],
+            "commandDebug": ["/home/justin/Apps/javascript-typescript-langserver/node_modules/javascript-typescript-langserver/lib/language-server-stdio.js", "-t"],
+            "rootIndicationFileNames": ["package.json", "package-lock.json"],
+            "url": "https://github.com/sourcegraph/vscode-javascript-typescript",
+            "highlightingModeRegex": "^JavaScript.*$"
+        }
+    }
+}
+
