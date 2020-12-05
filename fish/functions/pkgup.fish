@@ -5,7 +5,7 @@ function pkgup
     else if uname | grep -i openbsd 
         command doas pkg_add -uv
     else if command -q pacman 
-        command sudo pacman -Syu
+        command pkgup
     else if command -q apt 
         command sudo apt update && sudo apt upgrade
     end
