@@ -8,5 +8,7 @@ function pkgup
         command pkgup
     else if command -q apt 
         command sudo apt update && sudo apt upgrade
+    else if command -q brew
+        command brew update && brew upgrade
     end
 end
