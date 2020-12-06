@@ -12,6 +12,9 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
+# keybindings
+bind !! 'commandline "sudo $history[1]"'
+
 # Load ssh-agent
 load-ssh-agent
 
