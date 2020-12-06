@@ -1,7 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3100
-SETUVAR _fish_abbr__21_21_:sudo\x20git\x20add\x20\x2dA\x20\x2e
 SETUVAR _fisher_edc_2F_bass_files:/home/justin/\x2econfig/fish/functions/__bass\x2epy\x1e/home/justin/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_plugins:edc/bass
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
