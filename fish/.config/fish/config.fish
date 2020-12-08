@@ -18,11 +18,5 @@ bind !! 'commandline "sudo $history[1]"'
 # Load ssh-agent
 load-ssh-agent
 
-# OpenBSD only
-echo (load-openbsd-only-config) | source
-
-# Termux only
-load-termux-only-config
-
 # Eyecandy
 fortune | cowsay
