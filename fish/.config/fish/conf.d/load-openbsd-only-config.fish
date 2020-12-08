@@ -5,7 +5,7 @@ if uname | grep -i openbsd > /dev/null
     end
 
     # Set PATH
-    set -x PATH $PATH /usr/local/jdk-1.8.0/bin/
+    set -x PATH $PATH /usr/games /usr/local/jdk-1.8.0/bin/
 
     # Set alias 
     alias ls='gls --color=auto'
