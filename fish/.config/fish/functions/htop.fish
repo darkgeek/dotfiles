@@ -3,6 +3,6 @@ function htop
         # if in Termux environment, sudo is required to run htop
         sudo htop $argv
     else
-        htop $argv
+        command htop $argv
     end
 end
