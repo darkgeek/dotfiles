@@ -1,3 +1,3 @@
 function feh
-    command feh -F &argv
+    command feh -F $argv
 end
