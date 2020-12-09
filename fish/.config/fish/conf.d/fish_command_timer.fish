@@ -76,6 +76,10 @@ end
 
 # The fish_postexec event is fired after executing a command line.
 function fish_command_timer_postexec -e fish_postexec
+    if ! test $CMD_DURATION -gt $cmd_duration_threshold
+        return
+    end
+
     set -l duration "⌚"(calculate-cmd-duration)
     set -l duration_with_color (set_color $fish_command_timer_color)"$duration"(set_color normal)
     set -l duration_str_length (fish_command_timer_strlen $duration)  
