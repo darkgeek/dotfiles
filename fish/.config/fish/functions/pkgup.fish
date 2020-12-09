@@ -3,12 +3,12 @@ function pkgup
         # if in Termux environment, use pkg
         command pkg up -y $argv
     else if uname | grep -i openbsd 
-        command doas pkg_add -uv
+        doas pkg_add -uv
     else if command -qs brew
         command brew update && brew upgrade
     else if command -qs pacman 
         command pkgup
     else if command -qs apt 
-        command sudo apt update && sudo apt upgrade
+        sudo apt update && sudo apt upgrade
     end
 end
