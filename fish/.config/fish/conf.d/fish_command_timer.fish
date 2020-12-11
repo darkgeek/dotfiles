@@ -80,6 +80,11 @@ function fish_command_timer_postexec -e fish_postexec
         return
     end
 
+    # Omit empty command (occurs when you type nothing and just press enter, which won't update $CMD_DURATION previously set)
+    if test -z $argv
+        return
+    end
+
     set -l duration "⌚"(calculate-cmd-duration)
     set -l duration_with_color (set_color $fish_command_timer_color)"$duration"(set_color normal)
     set -l duration_str_length (fish_command_timer_strlen $duration)  
