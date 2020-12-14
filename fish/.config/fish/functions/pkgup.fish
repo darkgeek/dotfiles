@@ -11,4 +11,8 @@ function pkgup
     else if command -qs apt 
         sudo apt update && sudo apt upgrade
     end
+
+    if command -qs fwupdmgr
+        fwupdmgr refresh && fwupdmgr get-updates && fwupdmgr update
+    end
 end
