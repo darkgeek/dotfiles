@@ -95,9 +95,10 @@ Plug 'junegunn/vim-plug'
 Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
-Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 
 " End Plug
 call plug#end()            
