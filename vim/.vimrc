@@ -102,39 +102,6 @@ Plug 'junegunn/fzf.vim'
 " End Plug
 call plug#end()            
 
-" [CtrlP] Setup some default ignores
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
-  \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
-\}
-
-" [CtrlP] Use the nearest .git directory as the cwd
-" This makes a lot of sense if you are working on a project that is in version
-" control. It also supports works with .svn, .hg, .bzr.
-let g:ctrlp_working_path_mode = 'r'
-
-" [CtrlP] Use a leader instead of the actual named binding
-nmap <leader>p :CtrlP<cr>
-
-" [CtrlP] Easy bindings for its various modes
-nmap <leader>bb :CtrlPBuffer<cr>
-nmap <leader>bm :CtrlPMixed<cr>
-nmap <leader>bs :CtrlPMRU<cr>
-nmap <leader>bt :CtrlPTag<cr>
-
-" [NERDtree] List files in this project
-nmap <Leader>fl :NERDTreeToggle<CR>
-" [NERDtree] NERDtree window size
-let NERDTreeWinSize=32
-" [NERDTree] NERDTree window position
-let NERDTreeWinPos="left"
-" [NERDTree] Show hidden files
-let NERDTreeShowHidden=1
-" [NERDTree] Don't show extra help information
-let NERDTreeMinimalUI=1
-" [NERDTree] Delete buffers as well after removing a file
-let NERDTreeAutoDeleteBuffer=1
-
 " [tagbar] Show tag list on left
 let tagbar_left=1 
 " [tagbar] List tags shortcut
