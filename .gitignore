@@ -1,2 +1,11 @@
 fcitx/.config/fcitx/dbus
 fcitx/.config/fcitx/log
+fcitx/.config/fcitx/cached_layout
+fcitx/.config/fcitx/clipboard/history.dat
+fcitx/.config/fcitx/pinyin/pyusrphrase.mb
+fcitx/.config/fcitx/profile
+fcitx/.config/fcitx/pinyin/pyindex.dat
+openssh/.ssh/authorized_keys
+openssh/.ssh/id_rsa
+openssh/.ssh/id_rsa.pub
+openssh/.ssh/known_hosts
