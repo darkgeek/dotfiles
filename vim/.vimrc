@@ -105,6 +105,11 @@ let g:gutentags_cache_dir = s:vim_tags
 let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
 let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+" [gutentags] universal ctags is named differently on OpenBSD
+if system("uname -s") == "OpenBSD"
+    let g:gutentags_ctags_executable = "uctags"
+endif
+
 " [gutentags] create ~/.cache/tags if missing
 if !isdirectory(s:vim_tags)
    silent! call mkdir(s:vim_tags, 'p')
@@ -112,7 +117,7 @@ endif
 
 " [leadf] config
 let g:Lf_ShortcutF = '<c-p>'
-let g:Lf_ShortcutB = '<S-n>'
+let g:Lf_ShortcutB = '<Leader>n'
 noremap <c-n> :LeaderfMru<cr>
 noremap <Leader>p :LeaderfFunction!<cr>
 noremap <Leader>n :LeaderfBuffer<cr>
