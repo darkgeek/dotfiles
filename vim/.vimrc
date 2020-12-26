@@ -106,7 +106,7 @@ let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
 let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 " [gutentags] universal ctags is named differently on OpenBSD
-if system("uname -s") == "OpenBSD"
+if system("uname -s") =~ "OpenBSD"
     let g:gutentags_ctags_executable = "uctags"
 endif
 
