@@ -17,8 +17,6 @@ set incsearch
 colorscheme maui
 " Default file encoding
 set encoding=utf-8
-" Specify tags file
-set tags+=./tags
 " Tab length
 set tabstop=4
 " Indent length
@@ -47,34 +45,27 @@ set t_Co=256
 set scrolloff=3
 " Completion option
 set completeopt=menu,preview,longest
+" Enable plugin for specific file type
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 " Show status line always
 set cmdheight=2
 set laststatus=2
 " Auto-Completion for Vim command
 set wildmenu
-" Default Omni Function
-set omnifunc=syntaxcomplete#Complete
-" Do not search included files to speed up Ctrl-P
-set complete-=i
 " Switch to the other buffer without saving current buffer
 set hidden
 " Jump to the window already displaying desired buffer instead of creating new
 " one
 set switchbuf=useopen
-
+" remap leader
+let mapleader = ","
 " Save read-only file after editing
 command Sudow w !sudo tee % >/dev/null
 
 " Navigate through buffers
 nmap <C-l> :bnext<CR>
 nmap <C-k> :bprevious<CR>
-
-" Refresh ctags files upon saving
-autocmd BufWritePost *
-      \ if filereadable('tags') |
-      \   call system('exctags -R --languages-force='.&ft) |
-      \   echo "Tag refreshed." |
-      \ endif
 
 "Read Manpage in vim
 runtime! ftplugin/man.vim
@@ -95,19 +86,49 @@ Plug 'junegunn/vim-plug'
 Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
-Plug 'majutsushi/tagbar'
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'maralla/completor.vim'
 
 " End Plug
 call plug#end()            
 
-" [tagbar] Show tag list on left
-let tagbar_left=1 
-" [tagbar] List tags shortcut
-nnoremap <Leader>tl :TagbarToggle<CR> 
-" [tagbar] Tagbar window size
-let tagbar_width=32 
-" [tagbar] Don't show extra help information
-let g:tagbar_compact=1
+" [gutentags] tell ctags do not search upwards when encounter one of these dirs
+let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project']
+" [gutentags] tag file name
+let g:gutentags_ctags_tagfile = '.tags'
+" [gutentags] put generated tags under ~/.cache
+let s:vim_tags = expand('~/.cache/tags')
+let g:gutentags_cache_dir = s:vim_tags
+" [gutentags] ctags params
+let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
+let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+" [gutentags] create ~/.cache/tags if missing
+if !isdirectory(s:vim_tags)
+   silent! call mkdir(s:vim_tags, 'p')
+endif
 
+" [leadf] config
+let g:Lf_ShortcutF = '<c-p>'
+let g:Lf_ShortcutB = '<S-n>'
+noremap <c-n> :LeaderfMru<cr>
+noremap <Leader>p :LeaderfFunction!<cr>
+noremap <Leader>n :LeaderfBuffer<cr>
+noremap <Leader>m :LeaderfTag<cr>
+let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }
+let g:Lf_RootMarkers = ['.project', '.root', '.svn', '.git']
+let g:Lf_WorkingDirectoryMode = 'Ac'
+let g:Lf_ShowDevIcons = 0
+let g:Lf_WindowHeight = 0.30
+let g:Lf_CacheDirectory = expand('~/.vim/cache')
+let g:Lf_ShowRelativePath = 0
+let g:Lf_HideHelp = 1
+let g:Lf_StlColorscheme = 'powerline'
+let g:Lf_PreviewResult = {'Function':0, 'BufTag':0}
+
+" [completor] Enable LSP
+let g:completor_filetype_map = {}
+let g:completor_filetype_map.go = {'ft': 'lsp', 'cmd': 'gopls'}
+let g:completor_filetype_map.c = {'ft': 'lsp', 'cmd': 'clangd'}
