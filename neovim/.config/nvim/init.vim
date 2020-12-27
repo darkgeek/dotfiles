@@ -122,6 +122,10 @@ let g:Lf_ShowRelativePath = 0
 let g:Lf_HideHelp = 1
 let g:Lf_StlColorscheme = 'powerline'
 let g:Lf_PreviewResult = {'Function':0, 'BufTag':0}
+" [leadf] universal ctags is named differently on OpenBSD
+if system("uname -s") =~ "OpenBSD"
+    let g:Lf_Ctags = "uctags"
+endif
 
 " [completor] Enable LSP
 let g:completor_filetype_map = {}
