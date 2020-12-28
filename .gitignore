@@ -9,3 +9,4 @@ openssh/.ssh/authorized_keys
 openssh/.ssh/id_rsa
 openssh/.ssh/id_rsa.pub
 openssh/.ssh/known_hosts
+neovim/.config/nvim/.netrwhist
