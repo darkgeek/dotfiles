@@ -78,7 +78,6 @@ Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
-Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'maralla/completor.vim'
 
