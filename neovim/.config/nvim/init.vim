@@ -54,8 +54,6 @@ set hidden
 set switchbuf=useopen
 " remap leader
 let mapleader = ","
-" Save read-only file after editing
-command Sudow w !sudo tee % >/dev/null
 
 " Navigate through buffers
 nmap <C-l> :bnext<CR>
@@ -80,6 +78,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'maralla/completor.vim'
+Plug 'lambdalisue/suda.vim'
 
 " End Plug
 call plug#end()            
