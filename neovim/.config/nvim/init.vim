@@ -76,7 +76,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'maralla/completor.vim'
-Plug 'lambdalisue/suda.vim'
+Plug 'darkgeek/sudow'
 
 " End Plug
 call plug#end()            
