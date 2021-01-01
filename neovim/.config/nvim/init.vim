@@ -76,7 +76,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'maralla/completor.vim'
-Plug 'darkgeek/sudow'
+Plug 'darkgeek/sudow', { 'on': 'Sudow' }
 
 " End Plug
 call plug#end()            
@@ -113,7 +113,7 @@ let g:Lf_RootMarkers = ['.project', '.root', '.svn', '.git']
 let g:Lf_WorkingDirectoryMode = 'Ac'
 let g:Lf_ShowDevIcons = 0
 let g:Lf_WindowHeight = 0.30
-let g:Lf_CacheDirectory = expand('~/.vim/cache')
+let g:Lf_CacheDirectory = expand('~/.cache/leaderf')
 let g:Lf_ShowRelativePath = 0
 let g:Lf_HideHelp = 1
 let g:Lf_StlColorscheme = 'powerline'
