@@ -67,6 +67,15 @@ if empty(glob(stdpath('data') . '/site/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall
 endif
 
+" Check ctags availability: universal ctags has different names on different
+" platforms, for example, it's called 'uctags' on OpenBSD, while 'ctags' on
+" Debian and ArchLinux
+if executable('uctags')
+    let g:ctags_prog_name = 'uctags'
+else 
+    let g:ctags_prog_name = 'ctags'
+endif
+
 " Begin Plug
 call plug#begin(stdpath('data') . '/plugged')
 
@@ -92,10 +101,7 @@ let g:gutentags_cache_dir = s:vim_tags
 let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
 let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
-" [gutentags] universal ctags is named differently on OpenBSD
-if system("uname -s") =~ "OpenBSD"
-    let g:gutentags_ctags_executable = "uctags"
-endif
+let g:gutentags_ctags_executable = g:ctags_prog_name
 " [gutentags] create ~/.cache/tags if missing
 if !isdirectory(s:vim_tags)
    silent! call mkdir(s:vim_tags, 'p')
@@ -118,10 +124,7 @@ let g:Lf_ShowRelativePath = 0
 let g:Lf_HideHelp = 1
 let g:Lf_StlColorscheme = 'powerline'
 let g:Lf_PreviewResult = {'Function':0, 'BufTag':0}
-" [leadf] universal ctags is named differently on OpenBSD
-if system("uname -s") =~ "OpenBSD"
-    let g:Lf_Ctags = "uctags"
-endif
+let g:Lf_Ctags = g:ctags_prog_name
 
 " [completor] Enable LSP
 let g:completor_filetype_map = {}
