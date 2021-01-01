@@ -14,8 +14,11 @@ alias rm='rm -i'
 # keybindings
 bind !! 'commandline "sudo $history[1]"'
 
-# Load ssh-agent
-load-ssh-agent
+# Only when in tty
+if isatty
+    # Load ssh-agent
+    load-ssh-agent
 
-# Eyecandy
-fortune | cowsay
+    # Eyecandy
+    fortune | cowsay
+end
