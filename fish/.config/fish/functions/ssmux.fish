@@ -4,7 +4,7 @@ function ssmux
     set -l user $argv[2]
 
     # precheck
-    if test -z $user || test -z $inventory
+    if test -z $user; or test -z $inventory
         echo "[Usage] ssmux inventory user"
         return
     end
