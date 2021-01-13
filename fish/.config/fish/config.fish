@@ -3,7 +3,7 @@ set -x XMODIFIERS "@im=fcitx"
 set -x GTK_IM_MODULE fcitx
 set -x QT_IM_MODULE fcitx
 set -x PATH $PATH /sbin $HOME/Apps/bin $HOME/bin $HOME/.cargo/bin
-set -x EDITOR vim
+set -x EDITOR nvim
 set -x PAGER less
 
 # Alias
