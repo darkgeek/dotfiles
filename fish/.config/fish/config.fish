@@ -15,7 +15,7 @@ alias rm='rm -i'
 bind !! 'commandline "sudo $history[1]"'
 
 # Only when in tty
-if isatty
+if isatty && status is-interactive
     # Load ssh-agent
     load-ssh-agent
 
