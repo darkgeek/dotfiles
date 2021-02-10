@@ -11,4 +11,7 @@ if uname | grep -i openbsd > /dev/null
     alias ls='gls --color=auto'
     alias ll='gls --color=auto -a -l -h'
     alias la='gls --color=auto -a'
+
+    # Do not save core files
+    ulimit -c 0
 end
