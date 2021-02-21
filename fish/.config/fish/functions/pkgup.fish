@@ -10,6 +10,8 @@ function pkgup
         command pkgup
     else if command -qs apt 
         sudo apt update -y && sudo apt upgrade -y
+    else if command -qs apk
+	sudo apk update && sudo apk upgrade
     end
 
     if command -qs fwupdmgr
