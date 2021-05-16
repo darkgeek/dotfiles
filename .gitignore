@@ -12,3 +12,14 @@ openssh/.ssh/id_rsa
 openssh/.ssh/id_rsa.pub
 openssh/.ssh/known_hosts
 neovim/.config/nvim/.netrwhist
+qutebrowser/.local/share/JetBrains/
+qutebrowser/.local/share/applications/
+qutebrowser/.local/share/epiphany/
+qutebrowser/.local/share/fish/
+qutebrowser/.local/share/gvfs-metadata/
+qutebrowser/.local/share/nvim/
+qutebrowser/.local/share/qutebrowser/cmd-history
+qutebrowser/.local/share/qutebrowser/history.sqlite
+qutebrowser/.local/share/qutebrowser/state
+qutebrowser/.local/share/qutebrowser/webengine/
+qutebrowser/.local/share/recently-used.xbel
