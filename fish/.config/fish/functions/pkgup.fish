@@ -8,10 +8,12 @@ function pkgup
         command brew update && brew upgrade
     else if command -qs pacman 
         command pkgup
+    else if command -qs zypper
+        sudo zypper --non-interactive update
     else if command -qs apt 
         sudo apt update -y && sudo apt upgrade -y
     else if command -qs apk
-	sudo apk update && sudo apk upgrade
+	    sudo apk update && sudo apk upgrade
     end
 
     if command -qs fwupdmgr
