@@ -13,7 +13,7 @@ if uname | grep -i openbsd > /dev/null
     alias la='gls --color=auto -a'
 
     # Redirect all sounds to remote sndiod: https://not.just-paranoid.net/network-audio-and-sndio/
-    set -x AUDIODEVICE "snd@172.24.2.105/0"
+    set -x AUDIODEVICE "snd@darkgeek-alpine-tiangong/0"
 
     # Do not save core files
     ulimit -c 0
