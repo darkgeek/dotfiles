@@ -3,7 +3,9 @@ function vim
         command nvim $argv
     else if command -qs vim
         command vim $argv
+    else if command -qs vi
+        command vi $argv
     else
-        echo "Either neovim or vim should be installed"
+        echo "No vi implementation installed."
     end
 end
