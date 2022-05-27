@@ -5,6 +5,8 @@ function vim
         command vim $argv
     else if command -qs vi
         command vi $argv
+    else if command -qs neatvi
+        command neatvi $argv
     else
         echo "No vi implementation installed."
     end
