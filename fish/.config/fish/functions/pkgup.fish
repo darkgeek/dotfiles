@@ -1,7 +1,7 @@
 function pkgup
     if command -qs termux-info
         # if in Termux environment, use pkg
-        command pkg up -y $argv
+        command pkg upgrade -y $argv
     else if uname | grep -i openbsd > /dev/null
         doas pkg_add -uv
     else if command -qs brew
