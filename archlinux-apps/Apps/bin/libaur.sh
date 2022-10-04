@@ -2,7 +2,7 @@
 #
 # Helper functions for yaah
 
-WORKING_DIR=/tmp/buildZone/
+WORKING_DIR=$HOME/Shares/buildZone/
 ARCH=`uname -m`
 
 if [ ! -d "$WORKING_DIR" ]; then

@@ -1,3 +1,6 @@
+# Source system profile, see more: https://wiki.gentoo.org/wiki/Fish
+bass source /etc/profile
+
 # export envrionment variables
 set -x XMODIFIERS "@im=fcitx"
 set -x GTK_IM_MODULE fcitx
