@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
 SETUVAR _fisher_darkgeek_2F_fish_2D_command_2D_timer_files:/home/justin/\x2econfig/fish/conf\x2ed/fish_command_timer\x2efish
 SETUVAR _fisher_edc_2F_bass_files:/home/justin/\x2econfig/fish/functions/__bass\x2epy\x1e/home/justin/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_plugins:edc/bass\x1edarkgeek/fish\x2dcommand\x2dtimer
@@ -33,3 +33,4 @@ SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
