@@ -5,8 +5,8 @@ bass source /etc/profile
 set -x XMODIFIERS "@im=fcitx"
 set -x GTK_IM_MODULE fcitx
 set -x QT_IM_MODULE fcitx
-set -x PATH $PATH /sbin $HOME/Apps/bin $HOME/bin $HOME/.cargo/bin $HOME/.local/bin
 set -x EDITOR vim
+set -x PATH $PATH /sbin /usr/sbin /usr/pkg/sbin $HOME/Apps/bin $HOME/bin $HOME/.cargo/bin $HOME/.local/bin /usr/games /usr/pkg/java/openjdk8/bin
 set -x PAGER less
 
 # Alias

@@ -69,9 +69,12 @@ endif
 
 " Check ctags availability: universal ctags has different names on different
 " platforms, for example, it's called 'uctags' on OpenBSD, while 'ctags' on
-" Debian and ArchLinux
+" Debian and ArchLinux. And on NetBSD, universal ctags from pkgsrc is located below
+" /usr/pkg/bin. 
 if executable('uctags')
     let g:ctags_prog_name = 'uctags'
+elseif executable('/usr/pkg/bin/ctags')
+    let g:ctags_prog_name = '/usr/pkg/bin/ctags'
 else 
     let g:ctags_prog_name = 'ctags'
 endif

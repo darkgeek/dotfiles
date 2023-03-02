@@ -14,6 +14,8 @@ function pkgup
         sudo apt update -y && sudo apt upgrade -y
     else if command -qs apk
 	    sudo apk update && sudo apk upgrade
+    else if command -qs pkgin
+        sudo pkgin update && sudo pkgin upgrade -y
     end
 
     if command -qs fwupdmgr

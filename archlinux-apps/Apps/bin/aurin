@@ -26,7 +26,7 @@ yaah $PKG_NAME
 if [ $? -eq 0 ];then
     echo === Building ===
     cd $PKG_NAME 
-    if [[ "$ARCH" == "armv7l" || "$ARCH" == "aarch64" ]]; then
+    if [[ "$ARCH" == "armv7l" || "$ARCH" == "aarch64" || "$ARCH" == "loong64" || "$ARCH" == "loongarch64" ]]; then
         makepkg -sACcfi
     else
         makepkg -sCcfi
