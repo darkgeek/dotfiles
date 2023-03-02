@@ -31,12 +31,4 @@ export QT_IM_MODULE=fcitx
 bind '"\e[1;5D": shell-backward-word'
 bind '"\e[1;5C": shell-forward-word'
 
-# Try to start ssh-agent
-if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-    ssh-agent > ~/.ssh-agent-thing
-fi
-if [[ "$SSH_AGENT_PID" == "" ]]; then
-    eval "$(<~/.ssh-agent-thing)"
-fi
-
-fortune | cowsay
+[ -x /usr/bin/fish ] && SHELL=/usr/bin/fish exec fish
