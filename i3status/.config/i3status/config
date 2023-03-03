@@ -50,10 +50,10 @@ memory {
 }
 
 cpu_usage {
-        format = "all: %usage CPU_0: %cpu0 CPU_1: %cpu1 CPU_2: %cpu2 CPU_3: %cpu3"
+        format = "🖥️ CPU_0: %cpu0 CPU_1: %cpu1 CPU_2: %cpu2 CPU_3: %cpu3"
         max_threshold = 80
 }
 
 tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
+        format = "🗓️ %Y-%m-%d %H:%M:%S"
 }
