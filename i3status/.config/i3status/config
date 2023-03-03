@@ -36,11 +36,11 @@ battery all {
 }
 
 disk "/" {
-        format = "%avail"
+        format = "💾 %avail"
 }
 
 load {
-        format = "%1min"
+        format = "🔥 %1min"
 }
 
 memory {
