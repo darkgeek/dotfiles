@@ -190,7 +190,8 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+#        status_command i3status
+    status_command /home/justin/Apps/bin/my_i3status_wrapper.sh
 }
 
 # set wallpaper
@@ -200,8 +201,11 @@ exec --no-startup-id feh --bg-scale /home/justin/Downloads/gentoo-10-years-1920x
 bindsym $mod+minus move scratchpad
 bindsym $mod+plus scratchpad show
 
+# keybind to popup a list of windows in scratchpad
+bindsym $mod+c exec --no-startup-id /home/justin/Apps/bin/scratch-list.sh
+
 # set gaps
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 3
 gaps inner 15
 gaps outer 0
 smart_gaps on
