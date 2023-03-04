@@ -81,5 +81,5 @@ do
   read line
   update_rate
   update_scratchpad_window_count
-  echo "📝 scratchpad: ${scratchpad_window_count} | 🌐 ${rate} | ${line}" || exit 1
+  echo ",[{\"full_text\":\"📝 scratchpad: ${scratchpad_window_count}\" },{\"full_text\":\"🌐 ${rate}\" },${line#,\[}" || exit 1
 done)
