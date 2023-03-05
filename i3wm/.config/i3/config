@@ -223,7 +223,7 @@ gaps outer 0
 smart_gaps on
 
 # start picom
-exec --no-startup-id picom -cb
+exec --no-startup-id picom -fb
 
 # start keepassxc
 exec --no-startup-id keepassxc
