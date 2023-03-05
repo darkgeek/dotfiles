@@ -223,4 +223,4 @@ exec --no-startup-id xhost + local:
 exec --no-startup-id systemctl restart start-xfce4-clipman-plugin --user
 
 # try to lock the screen when there's no activity
-exec --no-startup-id xautolock -time 5 -locker 'i3lock -c 000000' &
+exec --no-startup-id xautolock -time 5 -locker 'i3lock -i /home/justin/Downloads/gentoo-10-years-1920x1080-blur.png' &
