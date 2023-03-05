@@ -196,7 +196,6 @@ bar {
     # color config is adapted from https://git.lin.moe/dotfiles/tree/i3/config#n140
     colors {
         background #1F2D3A
-        statusline #1ABC9C
         separator #1ABC9C
         focused_workspace  	#778899A5 #87CEEBA5 #FFFAFAF5
         inactive_workspace 	#7788993F #AFEEEE3F #FFFAFAF5
