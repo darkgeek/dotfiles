@@ -203,6 +203,9 @@ bar {
     }
 }
 
+# disable "focus follows mouse"
+focus_follows_mouse no
+
 # set wallpaper
 exec --no-startup-id feh --bg-scale /home/justin/Downloads/gentoo-10-years-1920x1080.png
 
