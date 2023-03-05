@@ -193,6 +193,7 @@ bindsym $mod+r mode "resize"
 bar {
     position top
     status_command /home/justin/Apps/bin/my_i3status_wrapper.sh
+    # color config is adapted from https://git.lin.moe/dotfiles/tree/i3/config#n140
     colors {
         background #1F2D3A
         statusline #1ABC9C
