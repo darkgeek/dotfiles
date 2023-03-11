@@ -192,7 +192,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
     position top
-    status_command /home/justin/Apps/bin/my_i3status_wrapper.sh
+    status_command $HOME/Apps/bin/my_i3status_wrapper.sh
     # color config is adapted from https://git.lin.moe/dotfiles/tree/i3/config#n140
     colors {
         background #1F2D3A
@@ -207,14 +207,14 @@ bar {
 focus_follows_mouse no
 
 # set wallpaper
-exec --no-startup-id feh --bg-scale /home/justin/Downloads/gentoo-10-years-1920x1080.png
+exec --no-startup-id feh --bg-scale $HOME/Downloads/gentoo-10-years-1920x1080.png
 
 # set keybind for scratchpad
 bindsym $mod+minus move scratchpad
 bindsym $mod+plus scratchpad show
 
 # keybind to popup a list of windows in scratchpad
-bindsym $mod+c exec --no-startup-id /home/justin/Apps/bin/scratch-list.sh
+bindsym $mod+c exec --no-startup-id $HOME/Apps/bin/scratch-list.sh
 
 # set gaps
 for_window [class="^.*"] border pixel 3
@@ -235,7 +235,7 @@ exec --no-startup-id xhost + local:
 exec --no-startup-id systemctl restart start-xfce4-clipman-plugin --user
 
 # start fcitx from container
-exec --no-startup-id /home/justin/Apps/bin/start-fcitx.sh
+exec --no-startup-id $HOME/Apps/bin/start-fcitx.sh
 
 # try to lock the screen when there's no activity
-exec --no-startup-id xautolock -time 5 -locker 'scrot /home/justin/Desktop/current-desktop.png && convert /home/justin/Desktop/current-desktop.png -blur 0x8 /home/justin/Desktop/current-desktop-blur.png && i3lock -i /home/justin/Desktop/current-desktop-blur.png' &
+exec --no-startup-id xautolock -time 5 -locker 'scrot -o $HOME/Desktop/current-desktop.png && convert $HOME/Desktop/current-desktop.png -blur 0x8 $HOME/Desktop/current-desktop.png && i3lock -i $HOME/Desktop/current-desktop.png' &
