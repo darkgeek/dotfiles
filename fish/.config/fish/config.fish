@@ -6,7 +6,7 @@ set -x XMODIFIERS "@im=fcitx"
 set -x GTK_IM_MODULE fcitx
 set -x QT_IM_MODULE fcitx
 set -x EDITOR vim
-set -x PATH $PATH /sbin /usr/sbin /usr/pkg/sbin $HOME/Apps/bin $HOME/bin $HOME/.cargo/bin $HOME/.local/bin /usr/games /usr/pkg/java/openjdk8/bin
+set -x PATH $PATH /sbin /usr/sbin /usr/pkg/sbin $HOME/Apps/bin $HOME/bin $HOME/.cargo/bin $HOME/.local/bin /usr/games /usr/pkg/java/openjdk8/bin /boot/dietpi /boot/dietpi/misc /boot/dietpi/func
 set -x PAGER less
 
 # Alias
