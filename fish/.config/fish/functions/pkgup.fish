@@ -9,7 +9,7 @@ function pkgup
     else if command -qs pacman 
         command pkgup
     else if command -qs zypper
-        sudo zypper --non-interactive update
+        sudo zypper --non-interactive dup
     else if command -qs apt 
         sudo apt update -y && sudo apt upgrade -y
     else if command -qs apk
