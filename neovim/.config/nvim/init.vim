@@ -88,6 +88,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'maralla/completor.vim'
 Plug 'darkgeek/sudow', { 'on': 'Sudow' }
 Plug 'img-paste-devs/img-paste.vim'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf'
 
 " End Plug
 call plug#end()            
