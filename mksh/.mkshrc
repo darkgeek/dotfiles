@@ -659,7 +659,7 @@ done
 \: place customisations above this line
 
 
-PS1=$'\a\r\a\e[1;34m\a \a\e[36m\a${USER:=$(ulimit -c 0; id -un 2>/dev/null || echo \?)}@${HOSTNAME%%.*}\a\e[34m\a | \a\e[0;33m\a$PWD\a\e[1;34m\a |\n | \a\e[32m\a$(date +%H:%M)\a\e[34m\a | >>\a\e[0m\a '
+PS1=$'\a\r\a\e[1;34m\a \a\e[36m\a${USER:=$(ulimit -c 0; id -un 2>/dev/null || echo \?)}@${HOSTNAME%%.*}\a\e[34m\a | \a\e[0;33m\a$(local p=${PWD/#$HOME/\∼}; print -nr -- $p)\a\e[1;34m\a |\n | \a\e[32m\a$(date +%H:%M)\a\e[34m\a | >>\a\e[0m\a '
 
 export PAGER=less
 export TERM=xterm-256color
