@@ -58,7 +58,7 @@ smores() (
 )
 
 # customise your favourite editor here; the first one found is used
-for EDITOR in "${EDITOR:-}" jupp jstar mcedit nvim ed vi; do
+for EDITOR in "${EDITOR:-}" nvim ed vi; do
 	EDITOR=$(\\builtin whence -p "$EDITOR") || EDITOR=
 	[[ -n $EDITOR && -x $EDITOR ]] && break
 	EDITOR=
