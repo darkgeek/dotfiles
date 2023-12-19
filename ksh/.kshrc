@@ -1,9 +1,9 @@
-. /etc/ksh.kshrc
+[ -e /etc/ksh.kshrc ] && . /etc/ksh.kshrc
 
 export PAGER=less
-export EDITOR=vim
+export EDITOR=nvim
 export HISTFILE=$HOME/.ksh_history
-export PATH=$PATH:/usr/local/jdk-1.8.0/bin/:$HOME/Apps/bin
+export PATH=$PATH:$HOME/bin:$HOME/Apps/bin
 
 export XMODIFIERS="@im=fcitx"
 export GTK_IM_MODULE=fcitx
@@ -19,6 +19,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 alias git='TERM=xterm-256color git'
+alias vim=nvim
 
 bind "^[[3~"=delete-char-forward
 
@@ -29,9 +30,9 @@ elif [ $TERM = 'xterm-256color' ];then
 fi
 
 if [ $USER = 'root' ];then
-	export PS1='\n\u@\h.\[$(tput setaf 1)\]\l\[$(tput op)\\n🕒 `date "+%m-%d %H:%M:%S"` 👉 \w \\$ '
+    export PS1=$'\a\r\a\e[31m\a\u@\h\a\e[34m\a | \a\e[0;33m\a\w\a\e[1;34m\a |\n | \a\e[32m\a$(date +%H:%M:%S)\a\e[34m\a | >>\a\e[0m\a '
 else	
-	export PS1='\n\u@\h.\[$(tput setaf 2)\]\l\[$(tput op)\\n🕒 `date "+%m-%d %H:%M:%S"` 👉 \w \\$ '
+    export PS1=$'\a\r\a\e[36m\a\u@\h\a\e[34m\a | \a\e[0;33m\a\w\a\e[1;34m\a |\n | \a\e[32m\a$(date +%H:%M:%S)\a\e[34m\a | >>\a\e[0m\a '
 fi
 
 set -o csh-history
