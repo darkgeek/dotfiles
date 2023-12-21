@@ -14,7 +14,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 #font pango:monospace 8
-font pango:DejaVu Sans Mono 10
+font pango:Ubuntu Mono 11
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -50,7 +50,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec qterminal
+bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -215,6 +215,9 @@ bindsym $mod+plus scratchpad show
 # keybind to popup a list of windows in scratchpad
 bindsym $mod+c exec --no-startup-id $HOME/Apps/bin/scratch-list.sh
 
+# keybind to rofi-calc
+bindsym $mod+z exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
+
 # set gaps
 for_window [class="^.*"] border pixel 3
 gaps inner 15
@@ -231,10 +234,13 @@ exec --no-startup-id keepassxc
 exec --no-startup-id xhost + local:
 
 # start xfce4-clipboard from container
-exec --no-startup-id systemctl restart start-xfce4-clipman-plugin --user
+exec --no-startup-id xfce4-clipman
 
-# start fcitx from container
-exec --no-startup-id $HOME/Apps/bin/start-fcitx.sh
+# start fcitx 
+exec --no-startup-id fcitx5
+
+# start xfce4-notes
+exec --no-startup-id xfce4-notes
 
 # try to lock the screen when there's no activity
-exec --no-startup-id xautolock -time 5 -locker 'scrot -o $HOME/Desktop/current-desktop.png && convert $HOME/Desktop/current-desktop.png -blur 0x8 $HOME/Desktop/current-desktop.png && i3lock -i $HOME/Desktop/current-desktop.png' &
+exec --no-startup-id xautolock -time 5 -locker /home/justin/bin/lock_display.sh &
