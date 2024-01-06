@@ -17,14 +17,8 @@ set incsearch
 colorscheme maui
 " Default file encoding
 set encoding=utf-8
-" Tab length
-set tabstop=4
-" Indent length
-set softtabstop=4
-set shiftwidth=4
 " Use tab at the start of a line or paragraph
 set smarttab
-set expandtab
 " Disable mouse
 set mouse-=a
 " Disable backup file
