@@ -37,7 +37,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # Example configuration:
 #
  exec swayidle -w \
-          timeout 300 'swaylock -f -c 000000' \
+          timeout 300 '/home/justin/bin/lock_display.sh' \
           timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
           before-sleep 'swaylock -f -c 000000'
 #
@@ -220,10 +220,10 @@ bar {
 # App startup
 #
 # keybind to popup a list of windows in scratchpad
-bindsym $mod+c exec --no-startup-id $HOME/Apps/bin/scratch-list.sh
+bindsym $mod+c exec --no-startup-id $HOME/Apps/bin/sway-scratch-list.sh
 
-# keybind to rofi-calc
-bindsym $mod+z exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
+# keybind to cliphist
+bindsym $mod+z exec --no-startup-id $HOME/bin/show_clip_hist.sh
 
 # set gaps
 for_window [class="^.*"] border pixel 3
@@ -236,6 +236,9 @@ exec --no-startup-id $HOME/bin/start_keepassxc.sh
 
 # start fcitx
 exec --no-startup-id fcitx5
+
+# start cliphist
+exec --no-startup-id wl-paste --watch $HOME/go/bin/cliphist store
 
 
 include /etc/sway/config.d/*
