@@ -73,7 +73,7 @@ update_rate() {
 }
 
 update_scratchpad_window_count() {
-    scratchpad_window_count=$(/home/justin/go/bin/i3-scratch-list | wc -l)
+    scratchpad_window_count=$($HOME/Apps/bin/sway-show-scratchpad.sh | wc -l)
 }
 
 i3status | (read line && echo "$line" && read line && echo "$line" && read line && echo "$line" && update_rate && update_scratchpad_window_count && while :
