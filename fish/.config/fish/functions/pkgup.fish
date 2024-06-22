@@ -10,6 +10,8 @@ function pkgup
         command pkgup
     else if command -qs zypper
         sudo zypper dup
+    else if command -qs oma
+	sudo oma refresh && sudo oma upgrade    
     else if command -qs apt 
         sudo apt update -y && sudo apt upgrade -y
     else if command -qs apk
