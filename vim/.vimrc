@@ -19,6 +19,7 @@ colorscheme maui
 set encoding=utf-8
 " Use tab at the start of a line or paragraph
 set smarttab
+set noexpandtab
 " Disable mouse
 set mouse-=a
 " Disable backup file
