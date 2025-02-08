@@ -1,0 +1,14 @@
+[
+  {
+    "label": "结束",
+    "command": ["quit"]
+  },
+  {
+    "label": "暂停/播放",
+    "command": ["cycle", "pause"]
+  },
+  {
+    "label": "查看进度",
+    "command": ["show-progress"]
+  }
+]
