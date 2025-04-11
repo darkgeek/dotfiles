@@ -13,6 +13,7 @@ dark_mode_exclude_list = [
 '*://*.hattrick.com/*',
 '*://*.hattrick.org/*',
 '*://*.hattrick-youthclub.org/*',
+'*://v2ex.com/*',
 ]
 
 c.colors.webpage.darkmode.enabled = True
