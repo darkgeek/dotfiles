@@ -9,7 +9,10 @@ c.url.start_pages = 'about:blank'
 # Set dark mode
 dark_mode_exclude_list = [
 '*://trophymanager.com/*',
-'*://footballmanagerproject.com/*'
+'*://footballmanagerproject.com/*',
+'*://*.hattrick.com/*',
+'*://*.hattrick.org/*',
+'*://*.hattrick-youthclub.org/*',
 ]
 
 c.colors.webpage.darkmode.enabled = True
